@@ -14,7 +14,7 @@
 </head>
 <body>
 <h1>Γbrain — Privacy Policy</h1>
-<p><em>Last updated: July 3, 2026</em></p>
+<p><em>Last updated: July 4, 2026</em></p>
 
 <p>Γbrain ("the app") is a native shell that loads a privately hosted web application ("the service") operated by an individual, Tucker Bradford. The app itself does not independently collect, transmit, or sell any data — it opens the service inside a native window/WebView and provides optional native conveniences (persistent sign-in, drag-and-drop file import/export). This policy covers both the app and the service it connects to.</p>
 
@@ -25,12 +25,13 @@
 <ul>
   <li><strong>Account/session data:</strong> a signed session identifier used to keep you signed in.</li>
   <li><strong>Content you provide:</strong> messages, files, and notes you send to or store in the service while using it.</li>
+  <li><strong>Location (native app only):</strong> if you grant location permission, the app captures a single GPS fix each time you open it, and whenever you explicitly attach your location to a chat message. This is never continuous or background tracking — the app only ever reads your location at that moment, not in between. Captured location is stored so the assistant can recall where you were, and made available as context to the AI for a short time after capture.</li>
   <li><strong>Basic technical data:</strong> standard web request logs (e.g. timestamps, error logs) used for operating and debugging the service.</li>
 </ul>
 <p>The native app additionally stores, only on your device: your selected server address and native WebView session/cache data, so you stay signed in between launches. This data never leaves your device except as part of normal requests to the service you configured.</p>
 
 <h2>How data is used</h2>
-<p>Data you provide is used solely to operate the service for you — for example, to generate AI responses to your messages, or to store and retrieve files you upload. Some requests are relayed to third-party AI providers (such as Anthropic) strictly to generate a response to your request; those providers process the request under their own terms and are not permitted to use it to advertise to you.</p>
+<p>Data you provide is used solely to operate the service for you — for example, to generate AI responses to your messages, or to store and retrieve files you upload. Location, when captured, is used to give the AI location-aware context (e.g. answering questions about nearby places) and to build a personal journal of where you were at a point in time. Some requests are relayed to third-party AI providers (such as Anthropic) strictly to generate a response to your request; those providers process the request under their own terms and are not permitted to use it to advertise to you.</p>
 
 <h2>What is not done with your data</h2>
 <p>Data is not sold, rented, or used for advertising. There is no ad tracking or third-party analytics SDK in the app.</p>
